@@ -4,7 +4,6 @@ This document provides a comprehensive guide to setting up, running, and extendi
 ## Table of Contents
 1 - System Requirements & Setup
 - Required Tools
-- Directory Structure
 - Initial Compilation
 
 2 - Core Files Overview
@@ -41,20 +40,6 @@ Ensure the following tools are installed and accessible in your system's PATH, o
 - **Clang Compile**r: Used for preprocessing C source files.
 - **Clang-Format**: Used for consistent code formatting before comparison, which is crucial for reliable diff results.
 - **diff utility**: Standard command-line tool for comparing files.
-
-# Directory Structure
-Organize your project with the following directory structure:
-
-.
-├── cetus_regression_test.c   # Main test runner source
-├── helper_tests.h            # Common definitions and prototypes
-├── master_test_cases.h       # Centralized test case definitions
-├── check_syntax.sh           # Script for semantic checking
-├── input_files/              # Directory for original C source files (e.g., simple_loop.c)
-├── ground_truth/             # Directory for expected output files (e.g., simple_loop_gt.c)
-├── cetus_intermediate_i_files/ # Created by test runner for preprocessed .i files
-├── cetus_transformed_output/   # Created by test runner for Cetus's output
-└── logs/                       # Created by test runner for test logs
 
 
 # Initial Compilation
