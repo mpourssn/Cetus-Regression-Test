@@ -44,6 +44,7 @@ Ensure the following tools are installed and accessible in your system's PATH, o
 
 # Directory Structure
 Organize your project with the following directory structure:
+
 .
 ├── cetus_regression_test.c   # Main test runner source
 ├── helper_tests.h            # Common definitions and prototypes
